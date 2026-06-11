@@ -1,0 +1,15 @@
+# GitSync Bot Auto-generated .gitignore
+# Java
+*.class
+*.jar
+*.war
+*.nar
+target/
+dependency-reduced-pom.xml
+build/
+.settings/
+.project
+.classpath
+.idea/
+*.iml
+
