@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debugging</title>
+</head>
+<body>
+<h2 id="display"></h2>
+<button onclick="runCheck()">
+    Start Test
+</button>
+<script>
+function runCheck(){
+    let spots = 15;
+    spots--;
+    document.getElementById("display").innerHTML =
+    "Available Spots: " + spots;
+}
+</script>
+</body>
+</html>
