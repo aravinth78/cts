@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Async JS</title>
+</head>
+<body>
+<h2 id="display">Please wait...</h2>
+<script>
+function getSessions(){
+    return new Promise(function(resolve){
+        setTimeout(function(){
+            resolve(["Docker Workshop","Yoga Session"]);
+        },2000);
+    });
+}
+async function showSessions(){
+    let output = await getSessions();
+    document.getElementById("display").innerHTML =
+    output.join("<br>");
+}
+showSessions();
+</script>
+</body>
+</html>

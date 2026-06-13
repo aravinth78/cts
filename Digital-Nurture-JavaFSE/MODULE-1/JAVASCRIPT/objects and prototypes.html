@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object</title>
+</head>
+<body>
+<div id="display"></div>
+<script>
+function Workshop(title, capacity){
+    this.title = title;
+    this.capacity = capacity;
+}
+Workshop.prototype.hasSpace = function(){
+    return this.capacity > 0 ?
+    "Spots Left" :
+    "No Spots";
+}
+let session1 = new Workshop("Coding Bootcamp", 15);
+document.getElementById("display").innerHTML =
+session1.title + "<br>" +
+session1.hasSpace();
+</script>
+</body>
+</html>

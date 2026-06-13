@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error Handling</title>
+</head>
+<body>
+<h2>Upcoming Sessions</h2>
+<div id="display"></div>
+<script>
+let sessions = [
+    {title:"Docker Workshop", slots:8},
+    {title:"Yoga Session", slots:0}
+];
+let output = "";
+sessions.forEach(function(session){
+    if(session.slots > 0){
+        output += session.title + "<br>";
+    }
+});
+try{
+    let info = undefined;
+    info.title;
+}
+catch(err){
+    output += "<br>Caught Error";
+}
+document.getElementById("display").innerHTML = output;
+</script>
+</body>
+</html>

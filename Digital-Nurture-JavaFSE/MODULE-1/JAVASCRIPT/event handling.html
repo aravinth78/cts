@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Handling</title>
+</head>
+<body>
+<button onclick="signUp()">
+    Sign Up
+</button>
+<br><br>
+<select onchange="pickCategory(val)">
+    <option>Tech</option>
+    <option>Health</option>
+</select>
+<br><br>
+<input type="text"
+placeholder="Find Event"
+onkeydown="lookupEvent()">
+<script>
+    function signUp(){
+        alert("Sign Up Successful");
+    }
+    function pickCategory(group){
+        console.log("Group:", group);
+    }
+    function lookupEvent(){
+        console.log("Looking up...");
+    }
+</script>
+</body>
+</html>
