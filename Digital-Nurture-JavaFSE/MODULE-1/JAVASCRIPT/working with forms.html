@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+</head>
+<body>
+<form id="signupForm">
+    <input type="text" name="fullname"
+    placeholder="Enter Full Name">
+    <br><br>
+    <input type="email" name="mail"
+    placeholder="Enter Email">
+    <br><br>
+    <select name="category">
+        <option>Tech</option>
+        <option>Health</option>
+    </select>
+    <br><br>
+    <button type="submit">
+        Send
+    </button>
+</form>
+<p id="warning"></p>
+<script>
+    document.getElementById("signupForm")
+    .addEventListener("submit", function(ev){
+        ev.preventDefault();
+        let user =
+        this.elements["fullname"].value;
+        if(user == ""){
+            document.getElementById("warning")
+            .innerHTML = "Name is required";
+        }
+        else{
+            alert("Registration Sent");
+        }
+    });
+</script>
+</body>
+</html>
