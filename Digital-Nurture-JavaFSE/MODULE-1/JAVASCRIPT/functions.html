@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions</title>
+</head>
+<body>
+<div id="display"></div>
+<script>
+function createEvent(title){
+    return title + " Created";
+}
+function enrollMember(person){
+    return person + " Enrolled";
+}
+document.getElementById("display").innerHTML =
+createEvent("Art Workshop") + "<br>" +
+enrollMember("Priya");
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+<div id="container"></div>
+<button onclick="createCard()">New Item</button>
+<script>
+    function createCard(){
+        let area =
+            document.querySelector("#container");
+        let item =
+            document.createElement("div");
+        item.innerHTML = "Workshop Booked";
+        area.appendChild(item);
+    }
+</script>
+</body>
+</html>

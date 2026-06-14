@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrays</title>
+</head>
+<body>
+<div id="display"></div>
+<script>
+let items = [];
+items.push("Tech Talk");
+items.push("Cooking Class");
+let labels = items.map(function(item){
+    return item;
+});
+document.getElementById("display").innerHTML =
+labels.join("<br>");
+</script>
+</body>
+</html>
