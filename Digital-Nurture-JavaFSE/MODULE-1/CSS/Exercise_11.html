@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --primary: #6c5ce7;
+            --secondary: #fd79a8;
+            --padding: 20px;
+        }
+        .panel{
+            width: 300px;
+            height: 150px;
+            background-color: var(--primary);
+            margin: var(--padding);
+            border-radius: 8px;
+        }
+        .badge{
+            width: 200px;
+            height: 80px;
+            background-color: var(--secondary);
+            margin: var(--padding);
+            line-height: 80px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS Variables in Action</h1>
+<div class="panel"></div>
+<div class="badge">Special Offer</div>
+<p>Change --primary and --secondary values to see the theme update.</p>
+</body>
+</html>
