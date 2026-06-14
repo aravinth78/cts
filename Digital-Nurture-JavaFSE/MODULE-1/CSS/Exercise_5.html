@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Demo</title>
+    <style>
+        .card{
+            border: 4px solid #e74c3c;
+            padding: 25px;
+            margin: 30px auto;
+            width: 320px;
+            background-color: #fdf2e9;
+            border-radius: 10px;
+        }
+        input:focus{
+            outline: 3px solid #2ecc71;
+        }
+        .invisible{
+            visibility: hidden;
+        }
+        .remove{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h2>Special Offer</h2>
+    <p>Get 30% off on all items this weekend.</p>
+</div>
+<input type="text" placeholder="Your Name">
+<p class="invisible">This text is hidden via visibility.</p>
+<p class="remove">This text is removed via display none.</p>
+</body>
+</html>

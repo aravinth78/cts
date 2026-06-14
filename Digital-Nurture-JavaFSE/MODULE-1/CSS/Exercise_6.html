@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        a:link{
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+        a:active{
+            color: #27ae60;
+        }
+        a:visited{
+            color: #8e44ad;
+        }
+        .navList{
+            display: flex;
+            list-style: none;
+            padding: 0;
+            gap: 15px;
+        }
+        .navList li{
+            padding: 12px 20px;
+            margin: 5px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Dashboard</a>
+    <ul class="navList">
+        <li>Profile</li>
+        <li>Messages</li>
+        <li>Settings</li>
+    </ul>
+</body>
+</html>
