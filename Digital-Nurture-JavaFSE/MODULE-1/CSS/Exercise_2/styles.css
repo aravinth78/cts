@@ -1,0 +1,18 @@
+h1{
+    color: teal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+p{
+    color: #555;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.submit-btn{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
