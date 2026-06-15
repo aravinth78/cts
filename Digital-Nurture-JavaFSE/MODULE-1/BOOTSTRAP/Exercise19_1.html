@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltips & Popovers</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h2 class="mb-4">Tooltips & Popovers</h2>
+        <button type="button" class="btn btn-secondary me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hello there!">Hover Me</button>
+        <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="Quick Info" data-bs-content="This is a Bootstrap popover example.">Click Me</button>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        tooltipTriggerList.map(function (el) { return new bootstrap.Tooltip(el) })
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        popoverTriggerList.map(function (el) { return new bootstrap.Popover(el) })
+    </script>
+</body>
+</html>
